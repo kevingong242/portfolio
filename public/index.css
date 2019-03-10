@@ -70,6 +70,36 @@ section p{
   font-size: 1.5rem;
 }
 
+#contact ul{
+  margin: 10px;
+}
+
+#contact button{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  width:50px;
+  height:50px;
+  opacity: 0.75;
+}
+
+#contact button:hover{
+  opacity: 1;
+}
+
+#emailBtn{
+  background-image: url("iconfinder_Email_3138894.png");
+}
+
+#linkedInBtn{
+  background-image: url("iconfinder_LinkedIn_3138898.png");
+}
+
+#gitHubBtn{
+  background-image: url("iconfinder_social_media_social_media_logo_github_2993771.png");
+}
+
 /* Section Images */
 
 section#home{
