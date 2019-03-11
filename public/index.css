@@ -30,25 +30,23 @@ body{
   background: rgba(0,0,0,0.7);
 }
 
-ul{
+#mySections{
   display: flex;
   list-style: none;
   width: 100%;
   justify-content: center;
 }
 
-ul li{
+#mySections a{
   margin: 0 1rem;
   padding: 1rem;
-}
-
-ul li a{
   text-decoration: none;
   text-transform: uppercase;
   color: #f4f4f4;
 }
 
-ul li a:hover{
+
+#mySections a:hover{
   color: skyblue;
 }
 
@@ -72,6 +70,13 @@ section p{
 
 #contact ul{
   margin: 10px;
+}
+
+#contact ul li{
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
 }
 
 #contact button{
@@ -100,6 +105,21 @@ section p{
   background-image: url("iconfinder_social_media_social_media_logo_github_2993771.png");
 }
 
+#menuIcon{
+  width: auto;
+  height: 60px;
+}
+
+#myPicture{
+  width:auto;
+  height: 60%;
+  border-radius: 50%;
+}
+
+#hamburgerMenu{
+    display: none;
+}
+
 /* Section Images */
 
 section#home{
@@ -107,11 +127,45 @@ section#home{
 }
 
 section#skills{
-  background: url(https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-744751.jpg) no-repeat center center/cover;
+  background: url(https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-751150.jpg) no-repeat center center/cover;
 }
 section#projects{
   background: url(https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-746835.jpg) no-repeat center center/cover;
 }
 section#contact{
-  background: url(https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-750048.jpg) no-repeat center center/cover;
+  background: url(https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-87670.jpg) no-repeat center center/cover;
+}
+
+
+/*Phone Size */
+@media only screen and (max-width: 768px){
+  #hamburgerMenu{
+    display: block;
+    height: 100%;
+    width: 10%;
+    justify-content: center;
+    text-align: center;
+    background: skyblue;
+    top: 0;
+    right: 0;
+    position: absolute;
+  }
+
+  .navbar a.icon{
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .navbar a:hover{
+      background-color: #ddd;
+      color: skyblue;
+  }
+
+  .navbar #mySections{
+    display: none;
+  }
+
 }

@@ -4,20 +4,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="index.css">
-    <title>Kevin Gong's Portfolio</title>
+    <title>Kevin Gong | Front-End Web Developer</title>
   </head>
   <body>
     <div class="container">
       <nav class="navbar">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div id="mySections">
+          <a href="#home">Home</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <a id="hamburgerMenu" href="javascript:void(0);" onclick="myFunction()">
+          <img  id="menuIcon" src="iconfinder_menu-alt_134216.png" alt="menu icon"/>
+        </a>
       </nav>
+
       <section id="home">
-        <h1>Welcome To My Website</h1>
+        <h1>Hello, I'm Kevin Gong</h1>
+        <p>I am a web developer based in Los Angeles, CA.</p>
+        <div class="headShot">
+          <img id="myPicture" src="profilepic.jpg" alt="picture of me"/>
+        </div>
       </section>
       <section id="skills">
         <h1>Skills</h1>
