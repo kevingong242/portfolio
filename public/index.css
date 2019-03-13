@@ -1,11 +1,12 @@
 *, html{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 
 body{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: #333;
   color: #fff;
   line-height: 1.6;
@@ -26,27 +27,30 @@ body{
   z-index: 1;
   display: flex;
   width: 100%;
-  height: 60px;
+  height: 6%;
   background: rgba(0,0,0,0.7);
 }
 
-#mySections{
+.navbar ul{
   display: flex;
   list-style: none;
   width: 100%;
   justify-content: center;
 }
 
-#mySections a{
+.navbar ul li{
   margin: 0 1rem;
   padding: 1rem;
+}
+
+.navbar ul li a{
   text-decoration: none;
   text-transform: uppercase;
   color: #f4f4f4;
 }
 
 
-#mySections a:hover{
+.navbar ul li a:hover{
   color: skyblue;
 }
 
@@ -60,7 +64,7 @@ section{
 }
 
 section h1{
-  padding-top: 40px;
+  padding-top: 4vh;
   font-size: 4rem;
 }
 
@@ -105,19 +109,23 @@ section p{
   background-image: url("iconfinder_social_media_social_media_logo_github_2993771.png");
 }
 
-#menuIcon{
-  width: auto;
-  height: 60px;
-}
-
 #myPicture{
   width:auto;
   height: 60%;
   border-radius: 50%;
 }
 
-#hamburgerMenu{
-    display: none;
+.burger{
+  display: none;
+  padding-top: 12px;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    color: white;
+    margin: 5px;
 }
 
 /* Section Images */
@@ -139,33 +147,22 @@ section#contact{
 
 /*Phone Size */
 @media only screen and (max-width: 768px){
-  #hamburgerMenu{
+
+  .burger{
     display: block;
-    height: 100%;
-    width: 10%;
-    justify-content: center;
-    text-align: center;
-    background: skyblue;
-    top: 0;
-    right: 0;
+  }
+
+  .nav-links{
     position: absolute;
+    right: 0px;
+    height: 94vh;
+    top: 6vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0,0,0,0.7);
+    width: 20% !important;
   }
 
-  .navbar a.icon{
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .navbar a:hover{
-      background-color: #ddd;
-      color: skyblue;
-  }
-
-  .navbar #mySections{
-    display: none;
-  }
 
 }
