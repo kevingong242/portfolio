@@ -40,13 +40,13 @@ body{
 
 .navbar ul li{
   margin: 0 1rem;
-  padding: 1rem;
 }
 
 .navbar ul li a{
   text-decoration: none;
   text-transform: uppercase;
   color: #f4f4f4;
+  height: 6%;
 }
 
 
@@ -64,7 +64,7 @@ section{
 }
 
 section h1{
-  padding-top: 4vh;
+  padding-top: 1.5%;
   font-size: 4rem;
 }
 
@@ -72,12 +72,36 @@ section p{
   font-size: 1.5rem;
 }
 
+
+/*Project Styles*/
+.projectList{
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  justify-content:center;
+  text-align: center;
+  align-items: center;
+  padding-top: 20%;
+}
+
+.individualProject{
+  margin: 0 10%;
+  width: 100%;
+}
+
+.projectList .individualProject button{
+  background-color: white;
+  width: 100%;
+  height: 30vh;
+}
+
+/*Contact Styles*/
 #contact ul{
   margin: 10px;
+  display: flex;
 }
 
 #contact ul li{
-  display: flex;
   list-style: none;
   width: 100%;
   justify-content: center;
@@ -111,21 +135,27 @@ section p{
 
 #myPicture{
   width:auto;
-  height: 60%;
+  height: 50vh;
   border-radius: 50%;
 }
 
 .burger{
   display: none;
-  padding-top: 12px;
+  width: 5%;
+  background-color: skyblue;
 }
 
 .burger div{
-    width: 25px;
-    height: 3px;
+    width: 80%;
+    height: 12%;
     background-color: white;
     color: white;
-    margin: 5px;
+    margin: 5%;
+    transition: all 0.3s ease;
+}
+
+.nav-active{
+  transform: translateX(0%);
 }
 
 /* Section Images */
@@ -144,25 +174,39 @@ section#contact{
   background: url(https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-87670.jpg) no-repeat center center/cover;
 }
 
+/*transform hamburger menu to an X if clicked*/
+.toggle .line1{
+  transform: rotate(-45deg) translate(-28%, 100%);
+}
 
-/*Phone Size */
+.toggle .line2{
+  opacity: 0;
+}
+
+.toggle .line3{
+  transform: rotate(45deg) translate(5%);
+  opacity: 0;
+}
+
+/*Phone Screen Size */
 @media only screen and (max-width: 768px){
 
   .burger{
     display: block;
+    cursor: pointer;
   }
 
   .nav-links{
     position: absolute;
     right: 0px;
-    height: 94vh;
+    height: 70vh;
     top: 6vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: rgba(0,0,0,0.7);
     width: 20% !important;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
   }
-
-
 }
