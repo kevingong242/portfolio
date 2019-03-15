@@ -61,10 +61,6 @@ section{
   height: 100vh;
 }
 
-.nav-active{
-  transform: translateX(0%);
-}
-
 section h1{
   font-size: 4rem;
 }
@@ -216,8 +212,15 @@ section#contact{
     transition: all 0.3s ease;
 }
 
+.nav-active{
+  transform: translateX(0%);
+}
+
 /*Phone Screen Size */
 @media only screen and (max-width: 768px){
+  .body{
+    overflow-x: hidden;
+  }
 
   .burger{
     display: block;

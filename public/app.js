@@ -9,10 +9,10 @@ const navSlider = () =>{
     burger.classList.toggle('toggle');
   });
 
-  document.querySelector('.nav-links').addEventListener('click', ()=>{
-    nav.classList.toggle('nav-active');
-    burger.classList.toggle('toggle');
-  });
+  //document.querySelector('.nav-links').addEventListener('click', ()=>{
+    //nav.classList.toggle('nav-active');
+    //burger.classList.toggle('toggle');
+  //});
 }
 
 navSlider();
