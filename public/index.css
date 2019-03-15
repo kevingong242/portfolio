@@ -39,6 +39,7 @@ body{
 
 .navbar ul li{
   margin: 0 1rem;
+  
 }
 
 .navbar ul li a{
@@ -87,7 +88,7 @@ section p{
 .skillSection{
   width: 33vw;
   margin: 10px;
-  background: skyblue;
+  background: #333;
 }
 
 .skillSection ul {
@@ -102,6 +103,14 @@ section p{
 .skillSection ul li i{
   font-size: 2em;
   font-size: 4vw;
+}
+
+.techList ul{
+  display: flex;
+}
+
+.techList ul li{
+  margin: 0 5%;
 }
 
 
@@ -120,7 +129,7 @@ section p{
 .individualProject{
   margin: 0 5%;
   width: 100%;
-  height: 100%;
+  height: 80%;
 }
 
 .projectList .individualProject button{
@@ -143,16 +152,18 @@ section p{
 }
 #contact ul li{
   list-style: none;
-  width: 100%;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
 }
 #contact button{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 25px;
-  width:50px;
-  height:50px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
   opacity: 0.75;
 }
 #contact button:hover{
@@ -239,12 +250,4 @@ section#contact{
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
   }
-}
-
-.test ul{
-  display: flex;
-}
-
-.test ul li{
-  margin: 0 5%;
 }
