@@ -52,6 +52,10 @@ body{
   color: skyblue;
 }
 
+.nav-active{
+  transform: translateX(0%) !important;
+}
+
 section{
   display: flex;
   flex-direction: column;
@@ -77,10 +81,13 @@ section p{
 /*Skills Section*/
 .skillsContainer{
   display: flex;
+  padding-top: 3vh;
 }
 
 .skillSection{
   width: 33vw;
+  margin: 10px;
+  background: skyblue;
 }
 
 .skillSection ul {
@@ -93,7 +100,8 @@ section p{
 }
 
 .skillSection ul li i{
-  font-size: 3rem;
+  font-size: 2em;
+  font-size: 4vw;
 }
 
 
@@ -212,19 +220,10 @@ section#contact{
     transition: all 0.3s ease;
 }
 
-.nav-active{
-  transform: translateX(0%);
-}
-
 /*Phone Screen Size */
-@media only screen and (max-width: 768px){
-  .body{
-    overflow-x: hidden;
-  }
-
+@media screen and (max-width: 768px){
   .burger{
     display: block;
-    cursor: pointer;
   }
 
   .nav-links{
@@ -240,4 +239,12 @@ section#contact{
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
   }
+}
+
+.test ul{
+  display: flex;
+}
+
+.test ul li{
+  margin: 0 5%;
 }
