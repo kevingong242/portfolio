@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <title>Kevin Gong | Front-End Web Developer</title>
   </head>
   <body>
@@ -24,43 +25,87 @@
             <a href="#contact">Contact</a>
           </li>
         </ul>
-
         <div class="burger">
           <div class="line1"></div>
           <div class="line2"></div>
           <div class="line3"></div>
         </div>
-
       </nav>
 
       <section id="home">
-        <h1>Hello, I'm Kevin Gong</h1>
-        <p>I am a web developer based in Los Angeles, CA.</p>
+        <div class="textContainer">
+          <h1>Hello, I'm Kevin Gong</h1>
+          <p>I am a web developer based in Los Angeles, CA.</p>
+        </div>
         <div class="headShot">
           <img id="myPicture" src="profilepic.jpg" alt="picture of me"/>
         </div>
       </section>
+
       <section id="skills">
-        <h1>Skills</h1>
-        <p>I am a recent graduate that looking for a web developer job</p>
+        <div class="textContainer">
+          <h1>Skills</h1>
+          <p>Heres a list of skills that I am experienced with:</p>
+        </div>
+        <div class="skillsContainer">
+          <div class="skillSection">
+            <h2>Languages</h2>
+            <ul>
+              <li><i class="devicon-javascript-plain colored"></i></li>
+              <li><i class="devicon-cplusplus-plain colored"></i></li>
+              <li><i class="devicon-python-plain-wordmark colored"></i></li>
+            </ul>
+          </div>
+          <div class="skillSection">
+            <h2>Technologies</h2>
+            <ul>
+              <li><i class="devicon-html5-plain-wordmark colored"></i></li>
+              <li><i class="devicon-css3-plain-wordmark colored"></i></li>
+              <li><i class="devicon-bootstrap-plain-wordmark colored"></i></li>
+              <li><i class="devicon-express-original-wordmark"></i></li>
+              <li><i class="devicon-jquery-plain-wordmark colored"></i></li>
+              <li><i class="devicon-nodejs-plain-wordmark colored"></i></li>
+              <li><i class="devicon-react-original-wordmark colored"></i></li>
+            </ul>
+          </div>
+          <div class="skillSection">
+            <h2>Tools</h2>
+            <ul>
+              <li><i class="devicon-git-plain-wordmark colored"></i></li>
+              <li><i class="devicon-vim-plain colored"></i></li>
+            </ul>
+          </div>
+        </div>
+
       </section>
       <section id="projects">
-        <h1>Projects</h1>
-        <p>Here is a list of the projects that I have been working on</p>
+        <div class="textContainer">
+          <h1>Projects</h1>
+          <p>Here is a list of the projects that I have been working on</p>
+        </div>
         <div class="projectList">
           <div class="individualProject">
             <button type="submit" id="project1" onclick="location.href='https://github.com/kevingong242/mintlight';">
+              MINT LIGHT
+            </button>
           </div>
           <div class="individualProject">
-            <button type="submit" id="project2" onclick="location.href='https://github.com/kevingong242/mintlight';">
+            <button type="submit" id="project2" onclick="location.href='https://github.com/kevingong242/NBAFantastyPlayerPredictor';">
+              NBA FANTASTY PREDICTOR
+            </button>
           </div>
           <div class="individualProject">
-            <button type="submit" id="project3" onclick="location.href='https://github.com/kevingong242/mintlight';">
+            <button type="submit" id="project3" onclick="location.href='https://keepon-9dc27.firebaseapp.com/';">
+              KEEPON
+            </button>
           </div>
         </div>
       </section>
       <section id="contact">
-        <h1>Contact</h1>
+        <div class="textContainer">
+          <h1>Contact</h1>
+          <p>Here are some ways of contacting me</p>
+        </div>
         <ul>
           <li>
             <button type="submit" id="emailBtn" onclick="location.href='mailto:kevingong1995@gmail.com';">
@@ -72,6 +117,10 @@
           </li>
           <li>
             <button type="submit" id="gitHubBtn" onclick="location.href='https://github.com/kevingong242';">
+            </button>
+          </li>
+          <li>
+            <button type="submit" id="resumeBtn" onclick="location.href='https://www.dropbox.com/s/o2lmpji6leetiqz/Kevin%20Gong%27s%20Resume.pdf?dl=0';">
             </button>
           </li>
         </ul>
