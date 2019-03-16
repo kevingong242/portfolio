@@ -3,16 +3,17 @@ const navSlider = () =>{
   const nav = document.querySelector('.nav-links');
   const navLi = document.querySelector('.navbar ul');
 
-  burger.addEventListener('click', ()=>{
-    //Toggle Nav
-    nav.classList.toggle('nav-active');
-    //Burger Animation
-    burger.classList.toggle('toggle');
-  });
+  document.querySelector( "#nav-toggle" )
+    .addEventListener( "click", function() {
+      this.classList.toggle("active");
+      nav.classList.toggle('nav-active');
+    });
 
- document.querySelector('.nav-links').addEventListener('click', ()=>{
-    nav.classList.toggle('nav-active');
-    burger.classList.toggle('toggle');
+ document.querySelector('.nav-links').addEventListener('click', (e)=>{
+    if(e.target.id){
+      nav.classList.toggle('nav-active');
+      document.querySelector( "#nav-toggle" ).classList.toggle("active");
+    }
   });
 }
 

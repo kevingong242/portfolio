@@ -48,7 +48,7 @@ section h1{
 }
 
 section p{
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .textContainer{
   margin-top: 5vh;
@@ -101,7 +101,7 @@ section p{
 
 /*Home Section*/
 #home h1{
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 #home p{
@@ -230,39 +230,8 @@ section p{
   opacity: 1;
 }
 
-/*transform hamburger menu to an X if clicked*/
-.toggle .line1{
-  transform: rotate(-45deg) translate(-28%, 100%);
-}
-.toggle .line2{
-  opacity: 0;
-}
-.toggle .line3{
-  transform: rotate(45deg) translate(5%);
-  opacity: 0;
-}
-/*Burger Menu*/
-.burger{
-  display: none;
-  width: 5%;
-  background-color: skyblue;
-}
-.burger div{
-    width: 80%;
-    height: 12%;
-    background-color: white;
-    color: white;
-    margin: 5%;
-    transition: all 0.3s ease;
-}
-
 /*Phone Screen Size */
 @media screen and (max-width: 768px){
-  .burger{
-    display: block;
-    width: 12%;
-  }
-
   .skillsContainer{
     flex-direction: column;
     align-items: center;
@@ -270,7 +239,7 @@ section p{
   }
 
   .skillSection{
-    width: 75vw;
+    width: 50vw;
   }
 
   .skillsContainer h2{
@@ -289,10 +258,14 @@ section p{
       height: 25vh;
   }
 
+  .navbar{
+    justify-content: flex-end;
+  }
+
   .nav-links{
     position: absolute;
     right: 0px;
-    height: 70vh;
+    height: 50vh;
     top: 5vh;
     display: flex;
     flex-direction: column;
@@ -301,5 +274,43 @@ section p{
     width: 40vw !important;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
+  }
+
+  #nav-toggle {
+    cursor: pointer;
+    padding: 15px 35px 16px 0px;
+  }
+
+  #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: white;
+    position: absolute;
+    display: block;
+    content: '';
+  }
+  #nav-toggle span:before {
+    top: -10px;
+  }
+  #nav-toggle span:after {
+    bottom: -10px;
+  }
+
+  #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    transition: all 500ms ease-in-out;
+  }
+  #nav-toggle.active span {
+    background-color: transparent;
+  }
+  #nav-toggle.active span:before, #nav-toggle.active span:after {
+    top: 0;
+  }
+  #nav-toggle.active span:before {
+    transform: rotate(45deg);
+  }
+  #nav-toggle.active span:after {
+    transform: rotate(-45deg);
   }
 }
