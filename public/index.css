@@ -51,7 +51,7 @@ section p{
   font-size: 1.5rem;
 }
 .textContainer{
-  margin-top: 2%;
+  margin-top: 5vh;
   height: 20vh;
   width: 75vw;
 }
@@ -63,7 +63,7 @@ section p{
   z-index: 1;
   display: flex;
   width: 100%;
-  height: 6%;
+  height: 5vh;
   background: rgba(0,0,0,0.7);
 }
 
@@ -76,18 +76,23 @@ section p{
 
 .navbar ul li{
   margin: 0 1rem;
-
+  width: 25%;
+  text-align: center;
+  margin-top: 1.5vh;
 }
 
 .navbar ul li a{
   text-decoration: none;
   text-transform: uppercase;
   color: #f4f4f4;
-  height: 6%;
 }
 
 .navbar ul li a:hover{
   color: skyblue;
+}
+
+.navLink-active{
+  text-decoration: underline !important;
 }
 
 .nav-active{
@@ -127,6 +132,10 @@ section p{
   opacity: 1;
 }
 
+.contactIcon{
+    padding: 20px;
+}
+
 #emailBtn{
   background-image: url("iconfinder_Email_3138894.png");
 }
@@ -156,8 +165,12 @@ section p{
 
 .skillSection{
   width: 33vw;
-  margin: 10px;
+  margin: 1.5%;
   background: #333;
+}
+
+.skillSection h2{
+    font-size: 2.5vw;
 }
 
 .skillSection ul {
@@ -183,15 +196,15 @@ section p{
 }
 
 #firebaseIcon{
-  width: 6vw;
-  height: 9vh;
+  width: 10%;
+  height: 100%;
 }
 
 /*Project Styles*/
 .projectList{
   display: flex;
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   justify-content:center;
   text-align: center;
   align-items: center;
@@ -247,18 +260,45 @@ section p{
 @media screen and (max-width: 768px){
   .burger{
     display: block;
+    width: 12%;
+  }
+
+  .skillsContainer{
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .skillSection{
+    width: 75vw;
+  }
+
+  .skillsContainer h2{
+    font-size: 5vw;
+  }
+
+
+  .projectList{
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .individualProject{
+      padding: 10%;
+      width: 100vw;
+      height: 25vh;
   }
 
   .nav-links{
     position: absolute;
     right: 0px;
     height: 70vh;
-    top: 6vh;
+    top: 5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: rgba(0,0,0,0.7);
-    width: 20% !important;
+    width: 40vw !important;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
   }
