@@ -21,9 +21,6 @@
           <li>
             <a href="#projects">Projects</a>
           </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
         </ul>
         <div class="burger">
           <div class="line1"></div>
@@ -33,12 +30,32 @@
       </nav>
 
       <section id="home">
+        <div class="headShot">
+          <img id="myPicture" src="profilepic.jpg" alt="picture of me"/>
+        </div>
         <div class="textContainer">
           <h1>Hello, I'm Kevin Gong</h1>
           <p>I am a web developer based in Los Angeles, CA.</p>
         </div>
-        <div class="headShot">
-          <img id="myPicture" src="profilepic.jpg" alt="picture of me"/>
+        <div class="contactIcon">
+          <ul>
+            <li>
+              <button type="submit" id="emailBtn" onclick="location.href='mailto:kevingong1995@gmail.com';">
+              </button>
+            </li>
+            <li>
+              <button type="submit" id="linkedInBtn" onclick="location.href='https://www.linkedin.com/in/kevin-gong-87021813b/';">
+              </button>
+            </li>
+            <li>
+              <button type="submit" id="gitHubBtn" onclick="location.href='https://github.com/kevingong242';">
+              </button>
+            </li>
+            <li>
+              <button type="submit" id="resumeBtn" onclick="location.href='https://www.dropbox.com/s/o2lmpji6leetiqz/Kevin%20Gong%27s%20Resume.pdf?dl=0';">
+              </button>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -108,30 +125,6 @@
             </button>
           </div>
         </div>
-      </section>
-      <section id="contact">
-        <div class="textContainer">
-          <h1>Contact</h1>
-          <p>Here are some ways of contacting me</p>
-        </div>
-        <ul>
-          <li>
-            <button type="submit" id="emailBtn" onclick="location.href='mailto:kevingong1995@gmail.com';">
-            </button>
-          </li>
-          <li>
-            <button type="submit" id="linkedInBtn" onclick="location.href='https://www.linkedin.com/in/kevin-gong-87021813b/';">
-            </button>
-          </li>
-          <li>
-            <button type="submit" id="gitHubBtn" onclick="location.href='https://github.com/kevingong242';">
-            </button>
-          </li>
-          <li>
-            <button type="submit" id="resumeBtn" onclick="location.href='https://www.dropbox.com/s/o2lmpji6leetiqz/Kevin%20Gong%27s%20Resume.pdf?dl=0';">
-            </button>
-          </li>
-        </ul>
       </section>
     </div>
     <script src="app.js"></script>
