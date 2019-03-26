@@ -197,7 +197,7 @@ section p{
 }
 
 #firebaseIcon{
-  width: 10%;
+  width: 50%;
   height: 100%;
 }
 
@@ -267,7 +267,7 @@ section p{
   .nav-links{
     position: absolute;
     right: 0px;
-    height: 50vh;
+    height: 100vh;
     top: 5vh;
     display: flex;
     flex-direction: column;
