@@ -1,10 +1,20 @@
 const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
 const uglify = require('gulp-uglify');
+const browserSync = require('browser-sync').create();
+const sass = require('gulp-sass');
+
 
 gulp.task('message', done =>{
     console.log('Gulp is running...');
     done();
+});
+
+gulp.task('sass', done =>{
+  gulp.src('public/*.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('dist'));
+  done();
 });
 
 gulp.task('copyHTML', done =>{
