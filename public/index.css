@@ -22,16 +22,13 @@ body{
 
 /* Section Style*/
 section#home{
-  background: url(https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-745377.jpg) no-repeat center center/cover;
+  background: url("images/wood-1759566_1920.jpg") no-repeat center center/cover;
 }
 section#skills{
-  background: url(https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-751150.jpg) no-repeat center center/cover;
+  background: url("images/leaves-1031355_1920.jpg") no-repeat center center/cover;
 }
 section#projects{
-  background: url(https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-746835.jpg) no-repeat center center/cover;
-}
-section#contact{
-  background: url(https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-87670.jpg) no-repeat center center/cover;
+  background: url("images/backdrop-874452_1280.jpg") no-repeat center center/cover;
 }
 
 section{
@@ -222,7 +219,7 @@ section p{
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   letter-spacing: 1em;
-  border-radius: 0;
+  border-radius: 1%;
   width: 100%;
   height: 100%;
   opacity: 0.75;
