@@ -259,6 +259,8 @@ section p{
 
   .navbar{
     justify-content: flex-end;
+    align-items: center;
+    min-height: 50px;
   }
 
   .nav-links{
@@ -278,6 +280,7 @@ section p{
   #nav-toggle {
     cursor: pointer;
     padding: 15px 35px 16px 0px;
+    margin-right: 2.5%;
   }
 
   #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
