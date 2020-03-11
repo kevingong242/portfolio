@@ -1,0 +1,337 @@
+*, html{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Proxima-nova', sans-serif;
+  background: #333;
+  color: #fff;
+  line-height: 1.6;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+/* Section Style*/
+section#home{
+  background-color: #254E58;
+}
+section#skills{
+  background-color: #254E58;
+}
+section#projects{
+  background-color: #BAB2B5;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+
+section h1{
+  font-size: 4rem;
+}
+
+section p{
+  font-size: 1rem;
+}
+
+/*Navbar Style*/
+.navbar{
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height:50px;
+}
+
+.navbar ul{
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+
+.navbar ul li{
+  margin: 0 1rem;
+  width: 20%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
+}
+
+.navbar ul li a:hover{
+  color: skyblue;
+}
+
+.navLink-active{
+  text-decoration: underline !important;
+}
+
+.nav-active{
+  transform: translateX(0%) !important;
+}
+
+.current-page {
+  border-bottom: solid 1px #fff;
+}
+
+/*Home Section*/
+#home{
+  flex-direction:row;
+  justify-content: center;
+}
+#home h1{
+  font-size: 2.5rem;
+}
+
+#home p{
+  font-size: 1rem;
+}
+
+#home ul{
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+#home ul li{
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+#home button{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  opacity: 0.75;
+}
+#home button:hover{
+  opacity: 1;
+}
+
+.headShot{
+  width: 40%;
+  height: 100%;
+}
+
+.home-text{
+  width: 50%;
+  margin: 0 auto;
+}
+
+.textContainer{
+  width: 60%;
+  text-align: left;
+}
+
+#myPicture{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contactIcon{
+    padding: 20px;
+}
+
+#emailBtn{
+  background-image: url("images/iconfinder_Email_3138894.png");
+}
+#linkedInBtn{
+  background-image: url("images/iconfinder_LinkedIn_3138898.png");
+}
+#gitHubBtn{
+  background-image: url("images/iconfinder_social_media_social_media_logo_github_2993771.png");
+}
+#resumeBtn{
+  background-image: url("https://cdn1.iconfinder.com/data/icons/aami-flat-files/64/files-08-512.png");
+}
+
+
+
+/*Skills Section*/
+.skillsContainer{
+  display: flex;
+  padding-top: 3vh;
+}
+
+.skillSection{
+  width: 33vw;
+  margin: 1.5%;
+  background: #333;
+  opacity: 0.75;
+}
+
+.skillSection h2{
+    font-size: 2.5vw;
+}
+
+.skillSection ul {
+  list-style: none;
+  justify-content: center;
+}
+
+.skillSection ul li{
+  padding: 2.5% 0;
+}
+
+.skillSection ul li i{
+  font-size: 2em;
+  font-size: 4vw;
+}
+
+.techList ul{
+  display: flex;
+}
+
+.techList ul li{
+  margin: 0 5%;
+}
+
+#firebaseIcon{
+  width: 50%;
+  height: 100%;
+}
+
+/*Project Styles*/
+.projectList{
+  display: flex;
+  width: 100%;
+  height: 60vh;
+  justify-content:center;
+  text-align: center;
+  align-items: center;
+  padding-top: 10%;
+}
+
+.individualProject{
+  margin: 0 5%;
+  width: 100%;
+  height: 80%;
+}
+
+.projectList .individualProject button{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1em;
+  border-radius: 1%;
+  width: 100%;
+  height: 100%;
+  opacity: 0.75;
+}
+
+.projectList .individualProject button:hover{
+  opacity: 1;
+}
+
+/*Phone Screen Size */
+@media screen and (max-width: 768px){
+  .skillsContainer{
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .skillSection{
+    width: 50vw;
+  }
+
+  .skillsContainer h2{
+    font-size: 5vw;
+  }
+
+
+  .projectList{
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .individualProject{
+      padding: 10%;
+      width: 100vw;
+      height: 25vh;
+  }
+
+  .navbar{
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 50px;
+  }
+
+  .nav-links{
+    position: absolute;
+    right: 0px;
+    height: 100vh;
+    top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0,0,0,0.7);
+    width: 40vw !important;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  #nav-toggle {
+    cursor: pointer;
+    padding: 15px 35px 16px 0px;
+    margin-right: 2.5%;
+  }
+
+  #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: white;
+    position: absolute;
+    display: block;
+    content: '';
+  }
+  #nav-toggle span:before {
+    top: -10px;
+  }
+  #nav-toggle span:after {
+    bottom: -10px;
+  }
+
+  #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    transition: all 500ms ease-in-out;
+  }
+  #nav-toggle.active span {
+    background-color: transparent;
+  }
+  #nav-toggle.active span:before, #nav-toggle.active span:after {
+    top: 0;
+  }
+  #nav-toggle.active span:before {
+    transform: rotate(45deg);
+  }
+  #nav-toggle.active span:after {
+    transform: rotate(-45deg);
+  }
+}

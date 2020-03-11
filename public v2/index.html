@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <title>Kevin Gong | Front-End Web Developer</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li class="current-page">
+            <a href="#home" id="homeNav">Home</a>
+          </li>
+          <li>
+            <a href="#work-experience" id="experienceNav">Experience</a>
+          </li>
+          <li>
+            <a href="#skills" id="skillNav">Skills</a>
+          </li>
+          <li>
+            <a href="#projects" id="projectNav">Projects</a>
+          </li>
+        </ul>
+        <a id="nav-toggle" href="#"><span></span></a>
+      </nav>
+      <section id="home">
+        <div class="headShot">
+          <img id="myPicture" src="images/profilepic.jpg" alt="picture of me"/>
+        </div>
+        <div class="textContainer">
+          <div class="home-text">
+            <h1>Hi,<br> I'm Kevin Gong</h1>
+            <p>I am a web developer based in Los Angeles, CA.</p>
+          </div>
+          <div class="contactIcon">
+            <ul>
+              <li>
+                <button type="submit" id="emailBtn" onclick="location.href='mailto:kevingong1995@gmail.com';">
+                </button>
+              </li>
+              <li>
+                <button type="submit" id="linkedInBtn" onclick="location.href='https://www.linkedin.com/in/kevin-gong-87021813b/';">
+                </button>
+              </li>
+              <li>
+                <button type="submit" id="gitHubBtn" onclick="location.href='https://github.com/kevingong242';">
+                </button>
+              </li>
+              <li>
+                <button type="submit" id="resumeBtn" onclick="location.href='https://www.dropbox.com/s/1qow47z18kbo8uf/Kevin%20Gong%27s%20Resume.pdf?dl=0';">
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="work-experience">
+        <div style="margin-top: 50px;">
+          <p>Work</p>
+        </div>
+      </section>
+      <section id="skills">
+        <div class="textContainer">
+          <h1>Skills</h1>
+          <p>Here is a list of skills that I am experienced with:</p>
+        </div>
+        <div class="skillsContainer">
+          <div class="skillSection">
+            <h2>Languages</h2>
+            <div class="techList">
+              <ul>
+                <li><i class="devicon-javascript-plain colored"></i></li>
+                <li><i class="devicon-html5-plain-wordmark colored"></i></li>
+                <li><i class="devicon-css3-plain-wordmark colored"></i></li>
+                <li><i class="devicon-cplusplus-line"></i></li>
+              </ul>
+            </div>
+          </div>
+          <div class="skillSection">
+            <h2>Technologies</h2>
+            <div class="techList">
+              <ul class="skillList">
+                <li><i class="devicon-bootstrap-plain-wordmark colored"></i></li>
+                <li><i class="devicon-express-original-wordmark"></i></li>
+                <li><i class="devicon-jquery-plain-wordmark colored"></i></li>
+                <li><i class="devicon-nodejs-plain-wordmark colored"></i></li>
+              </ul>
+              <ul class="skillList">
+                <li><i class="devicon-react-original-wordmark colored"></i></li>
+                <li><i class="devicon-gulp-plain"></i></li>
+                <li><i class="devicon-mongodb-plain-wordmark colored"></i></li>
+                <li><img id="firebaseIcon" src="https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-512.png"></img></li>
+              </ul>
+            </div>
+          </div>
+          <div class="skillSection">
+            <h2>Tools</h2>
+            <div class="techList">
+              <ul>
+                <li><i class="devicon-git-plain-wordmark colored"></i></li>
+                <li><i class="devicon-vim-plain colored"></i></li>
+                <li><i class="devicon-wordpress-plain-wordmark"></i></li>
+              </ul>
+          </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <div class="textContainer">
+          <h1>Projects</h1>
+          <p>Here is a list of the projects that I have been working on</p>
+        </div>
+        <div class="projectList">
+          <div class="individualProject">
+            <button type="submit" id="project1" onclick="location.href='https://github.com/kevingong242/mintlight';">
+              MINT LIGHT
+            </button>
+          </div>
+          <div class="individualProject">
+            <button type="submit" id="project2" onclick="location.href='https://github.com/kevingong242/NBAFantastyPlayerPredictor';">
+              NBA FANTASTY PREDICTOR
+            </button>
+          </div>
+          <div class="individualProject">
+            <button type="submit" id="project3" onclick="location.href='https://keepon-9dc27.firebaseapp.com/';">
+              KEEPON
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
+<script src="app.js"></script>
