@@ -5,7 +5,7 @@
 }
 
 body{
-  font-family: 'Proxima-nova', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: #333;
   color: #fff;
   line-height: 1.6;
@@ -46,6 +46,11 @@ section h1{
 
 section p{
   font-size: 1rem;
+}
+.textContainer{
+  margin-top: 5vh;
+  height: 20vh;
+  width: 75vw;
 }
 
 /*Navbar Style*/
@@ -95,11 +100,11 @@ section p{
   border-bottom: solid 1px #fff;
 }
 
-/*Home Section*/
-#home{
-  flex-direction:row;
-  justify-content: center;
+h3{
+  font-size: 40px;
 }
+
+/*Home Section*/
 #home h1{
   font-size: 2.5rem;
 }
@@ -111,7 +116,6 @@ section p{
 #home ul{
   margin: 10px;
   display: flex;
-  justify-content: center;
 }
 #home ul li{
   list-style: none;
@@ -119,6 +123,7 @@ section p{
   align-items: center;
   text-align: center;
   padding: 20px;
+  margin-top: 25px;
 }
 #home button{
   background-position: center;
@@ -131,27 +136,6 @@ section p{
 }
 #home button:hover{
   opacity: 1;
-}
-
-.headShot{
-  width: 40%;
-  height: 100%;
-}
-
-.home-text{
-  width: 50%;
-  margin: 0 auto;
-}
-
-.textContainer{
-  width: 60%;
-  text-align: left;
-}
-
-#myPicture{
-  width:100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .contactIcon{
@@ -171,6 +155,39 @@ section p{
   background-image: url("https://cdn1.iconfinder.com/data/icons/aami-flat-files/64/files-08-512.png");
 }
 
+#myPicture{
+  width:auto;
+  height: 25vh;
+  border-radius: 50%;
+  margin-top: 7vh;
+}
+
+/*Work Section*/
+
+.work-container{
+  width: 100%;
+  margin-top: 50px;
+}
+
+.jobs{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.current-job, .past-job{
+  text-align: center;
+}
+
+#work-experience li{
+  max-width: 500px;
+  margin-bottom: 1em;
+}
+
+.job-description{
+  margin-top: 50px;
+  text-align: left;
+}
 
 
 /*Skills Section*/
@@ -250,20 +267,23 @@ section p{
 
 /*Phone Screen Size */
 @media screen and (max-width: 768px){
+  section{
+    height: auto;
+  }
+
   .skillsContainer{
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    width: 100%;
+    padding: 20px 0;
   }
 
-  .skillSection{
-    width: 50vw;
-  }
+  .skillSection{width: 90%;}
 
-  .skillsContainer h2{
-    font-size: 5vw;
-  }
+  .skillsContainer h2{font-size: 5vw;}
 
+  .skillSection ul li i{ font-size: 40px;}
+  #firebaseIcon{ width: 40px; height: 41px;}
 
   .projectList{
     flex-direction: column;
@@ -275,6 +295,23 @@ section p{
       width: 100vw;
       height: 25vh;
   }
+
+  .jobs{
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  .work-container{ margin-top: 0;}
+  .jobs .company-name{ font-size: 40px;}
+  .jobs .job-description{
+    font-size: 16px;
+    padding: 0 25px;
+  }
+
+  .textContainer{
+    margin-top: 0;
+  }
+
 
   .navbar{
     justify-content: flex-end;
