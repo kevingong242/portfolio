@@ -11,10 +11,14 @@ const navSlider = () =>{
 
  document.querySelector('.nav-links').addEventListener('click', (e)=>{
     if(e.target.id){
-      nav.classList.toggle('nav-active');
-      document.querySelector( "#nav-toggle" ).classList.toggle("active");
+      $('.current-page').removeClass('current-page');
+      $(e.target).parent().addClass('current-page');
+      
+      //$(e.target).toggle('nav-active');
+      //document.querySelector( "#nav-toggle" ).classList.toggle("active");
     }
   });
+
 }
 
 navSlider();
