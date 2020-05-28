@@ -19,3 +19,8 @@ const navSlider = () =>{
 }
 
 navSlider();
+
+$('.nav-links li').click(function(){
+  $('#nav-toggle').toggleClass("active");
+  $('.nav-links').toggleClass('nav-active');
+});

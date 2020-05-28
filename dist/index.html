@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Kevin Gong | Front-End Web Developer</title>
   </head>
   <body>
@@ -29,10 +30,10 @@
         <a id="nav-toggle" href="#"><span></span></a>
       </nav>
       <section id="home">
-        <div class="headShot">
-          <img id="myPicture" src="images/profilepic.jpg" alt="picture of me"/>
+        <div class="head-shot">
+          <img id="my-picture" src="images/profilepic.jpg" alt="picture of me"/>
         </div>
-        <div class="textContainer">
+        <div class="text-container">
           <h1>Hello, I'm Kevin Gong</h1>
           <p>I am a web developer based in Los Angeles, CA.</p>
         </div>
@@ -67,33 +68,32 @@
               <p class="duration">August 2019 - Current</p>
               <ul class="job-description">
                 <li>Covert Photoshop documents and Invision prototypes into fully functioning websites</li>
-                <li>Collaborate with social media team to implement an influencer marketing platform's SDK to track conversions and traffic</li>
-                <li>Perform functionality and interface tests on 1ShoppingCart to increase conversion rates on our sales funnel</li>
+                <li>Perform functionality and interface tests on an ecommerce platform to increase conversion rates on our sales funnel</li>
+                <li>Help migrate our webpages to a new tech stack that uses tools such as Angular JS, TypeScript, Ionic, and Salesforce</li>
               </ul>
             </div>
             <div class="past-job">
-              <div class="current-job">
-                <h3 class="company-name">RG Pacific LLC</h3>
-                <p class="job-position">Web Developer Intern</p>
-                <p class="duration">June 2019 - August 2019</p>
-                <ul class="job-description">
-                  <li>Develop and maintain code for client websites primarily using content management systems such as Wordpress and Shopify's e-commerce platform</li>
-                  <li>Test websites in various browsers to ensure cross browser compatibility and mobile responsiveness</li>
-                  <li>Collaborate with multiple teams and analyze data through web analytics to help increase traffic flow</li>
-                </ul>
-              </div>
+              <h3 class="company-name">RG Pacific LLC</h3>
+              <p class="job-position">Web Developer Intern</p>
+              <p class="duration">June 2019 - August 2019</p>
+              <ul class="job-description">
+                <li>Develop and maintain code for client websites primarily using content management systems such as Wordpress and Shopify's e-commerce platform</li>
+                <li>Test websites in various browsers to ensure cross browser compatibility and mobile responsiveness</li>
+                <li>Collaborate with multiple teams and analyze data through web analytics to help increase traffic flow</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
       <section id="skills">
-        <div class="textContainer">
+        <div class="text-container">
           <h1>Skills</h1>
           <p>Here is a list of skills that I am experienced with:</p>
         </div>
-        <div class="skillsContainer">
-          <div class="skillSection">
+        <div class="skills-container">
+          <div class="skill-section">
             <h2>Languages</h2>
-            <div class="techList">
+            <div class="tech-list">
               <ul>
                 <li><i class="devicon-javascript-plain colored"></i></li>
                 <li><i class="devicon-html5-plain-wordmark colored"></i></li>
@@ -102,52 +102,53 @@
               </ul>
             </div>
           </div>
-          <div class="skillSection">
+          <div class="skill-section">
             <h2>Technologies</h2>
-            <div class="techList">
-              <ul class="skillList">
+            <div class="tech-list">
+              <ul class="skill-list">
                 <li><i class="devicon-bootstrap-plain-wordmark colored"></i></li>
                 <li><i class="devicon-express-original-wordmark"></i></li>
                 <li><i class="devicon-jquery-plain-wordmark colored"></i></li>
                 <li><i class="devicon-nodejs-plain-wordmark colored"></i></li>
               </ul>
-              <ul class="skillList">
-                <li><i class="devicon-react-original-wordmark colored"></i></li>
-                <li><i class="devicon-gulp-plain"></i></li>
+              <ul class="skill-list">
+                <li><i class="devicon-angularjs-plain colored"></i></li>
                 <li><i class="devicon-mongodb-plain-wordmark colored"></i></li>
-                <li><img id="firebaseIcon" src="https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-512.png"></img></li>
+                <li><i class="devicon-sass-original"></i></li>
+                <li><i class="devicon-typescript-plain"></i></li>
               </ul>
             </div>
           </div>
-          <div class="skillSection">
+          <div class="skill-section">
             <h2>Tools</h2>
-            <div class="techList">
+            <div class="tech-list">
               <ul>
                 <li><i class="devicon-git-plain-wordmark colored"></i></li>
                 <li><i class="devicon-vim-plain colored"></i></li>
                 <li><i class="devicon-wordpress-plain-wordmark"></i></li>
+                <li><i class="devicon-visualstudio-plain"></i></li>
               </ul>
           </div>
           </div>
         </div>
       </section>
       <section id="projects">
-        <div class="textContainer">
+        <div class="text-container">
           <h1>Projects</h1>
           <p>Here is a list of the projects that I have been working on</p>
         </div>
-        <div class="projectList">
-          <div class="individualProject">
+        <div class="project-list">
+          <div class="individual-project">
             <button type="submit" id="project1" onclick="location.href='https://github.com/kevingong242/mintlight';">
               MINT LIGHT
             </button>
           </div>
-          <div class="individualProject">
+          <div class="individual-project">
             <button type="submit" id="project2" onclick="location.href='https://github.com/kevingong242/NBAFantastyPlayerPredictor';">
               NBA FANTASTY PREDICTOR
             </button>
           </div>
-          <div class="individualProject">
+          <div class="individual-project">
             <button type="submit" id="project3" onclick="location.href='https://keepon-9dc27.firebaseapp.com/';">
               KEEPON
             </button>

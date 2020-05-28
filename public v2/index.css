@@ -20,6 +20,9 @@ body{
   scroll-behavior: smooth;
 }
 
+section{
+ background-color:#254E58 !important;
+}
 /* Section Style*/
 section#home{
   background-color: #254E58;
@@ -41,11 +44,11 @@ section{
 }
 
 section h1{
-  font-size: 4rem;
+  font-size: 42px;
 }
 
 section p{
-  font-size: 1rem;
+  font-size: 17px;
 }
 .text-container{
   margin-top: 5vh;
@@ -177,10 +180,22 @@ h3{
 
 .current-job, .past-job{
   text-align: center;
+  border-radius: 24px;
+  padding: 10px;
+  color:black;
+  width: 40%;
+}
+
+.current-job{
+  background-color:#F2E2F3 !important
+}
+.past-job{
+  background-color: #FFE7E7;
 }
 
 #work-experience li{
   max-width: 500px;
+  list-style: none;
   margin-bottom: 1em;
 }
 
@@ -265,6 +280,10 @@ h3{
   opacity: 1;
 }
 
+@media screen and (max-width: 1050px){
+  #work-experience li{max-width: 350px;}
+}
+
 /*Phone Screen Size */
 @media screen and (max-width: 768px){
   section{
@@ -310,6 +329,7 @@ h3{
   }
 
   .work-container{ margin-top: 0;}
+  #work-experience li{margin: 5px auto;}
   .jobs .company-name{ font-size: 40px;}
   .jobs .job-description{
     font-size: 16px;
@@ -327,10 +347,18 @@ h3{
     min-height: 50px;
   }
 
+  .navbar ul li{
+    width: 40%;
+  }
+
+  .navbar ul li a{
+    font-size: 40px;
+  }
+
   .nav-links{
     position: absolute;
     right: 0px;
-    height: 25vh;
+    height: 100vh;
     top: 0vh;
     display: flex;
     flex-direction: column;

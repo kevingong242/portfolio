@@ -20,6 +20,9 @@ body{
   scroll-behavior: smooth;
 }
 
+section{
+ background-color:#254E58 !important;
+}
 /* Section Style*/
 section#home{
   background-color: #254E58;
@@ -41,13 +44,13 @@ section{
 }
 
 section h1{
-  font-size: 4rem;
+  font-size: 42px;
 }
 
 section p{
-  font-size: 1rem;
+  font-size: 17px;
 }
-.textContainer{
+.text-container{
   margin-top: 5vh;
   height: 20vh;
   width: 75vw;
@@ -138,7 +141,7 @@ h3{
   opacity: 1;
 }
 
-.contactIcon{
+.contact-icon{
     padding: 20px;
 }
 
@@ -155,7 +158,7 @@ h3{
   background-image: url("https://cdn1.iconfinder.com/data/icons/aami-flat-files/64/files-08-512.png");
 }
 
-#myPicture{
+#my-picture{
   width:auto;
   height: 25vh;
   border-radius: 50%;
@@ -177,10 +180,22 @@ h3{
 
 .current-job, .past-job{
   text-align: center;
+  border-radius: 24px;
+  padding: 10px;
+  color:black;
+  width: 40%;
+}
+
+.current-job{
+  background-color:#F2E2F3 !important
+}
+.past-job{
+  background-color: #FFE7E7;
 }
 
 #work-experience li{
   max-width: 500px;
+  list-style: none;
   margin-bottom: 1em;
 }
 
@@ -191,41 +206,41 @@ h3{
 
 
 /*Skills Section*/
-.skillsContainer{
+.skills-container{
   display: flex;
   padding-top: 3vh;
 }
 
-.skillSection{
+.skill-section{
   width: 33vw;
   margin: 1.5%;
   background: #333;
   opacity: 0.75;
 }
 
-.skillSection h2{
+.skill-section h2{
     font-size: 2.5vw;
 }
 
-.skillSection ul {
+.skill-section ul {
   list-style: none;
   justify-content: center;
 }
 
-.skillSection ul li{
+.skill-section ul li{
   padding: 2.5% 0;
 }
 
-.skillSection ul li i{
+.skill-section ul li i{
   font-size: 2em;
   font-size: 4vw;
 }
 
-.techList ul{
+.tech-list ul{
   display: flex;
 }
 
-.techList ul li{
+.tech-list ul li{
   margin: 0 5%;
 }
 
@@ -235,7 +250,7 @@ h3{
 }
 
 /*Project Styles*/
-.projectList{
+.project-list{
   display: flex;
   width: 100%;
   height: 60vh;
@@ -245,13 +260,13 @@ h3{
   padding-top: 10%;
 }
 
-.individualProject{
+.individual-project{
   margin: 0 5%;
   width: 100%;
   height: 80%;
 }
 
-.projectList .individualProject button{
+.project-list .individual-project button{
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   letter-spacing: 1em;
@@ -261,8 +276,12 @@ h3{
   opacity: 0.75;
 }
 
-.projectList .individualProject button:hover{
+.project-list .individual-project button:hover{
   opacity: 1;
+}
+
+@media screen and (max-width: 1050px){
+  #work-experience li{max-width: 350px;}
 }
 
 /*Phone Screen Size */
@@ -275,30 +294,30 @@ h3{
     padding: 20px 10px;
   }
 
-  .skillsContainer{
+  .skills-container{
     flex-direction: column;
     align-items: center;
     width: 100%;
     padding: 20px 0;
   }
 
-  .skillSection{width: 90%;}
+  .skill-section{width: 90%;}
 
-  .skillsContainer h2{font-size: 5vw;}
+  .skills-container h2{font-size: 5vw;}
 
-  #skills .textContainer{
+  #skills .text-container{
     height: auto;
   }
 
-  .skillSection ul li i{ font-size: 40px;}
+  .skill-section ul li i{ font-size: 40px;}
   #firebaseIcon{ width: 40px; height: 41px;}
 
-  .projectList{
+  .project-list{
     flex-direction: column;
     height: 100%;
   }
 
-  .individualProject{
+  .individual-project{
       padding: 10%;
       width: 100vw;
       height: 25vh;
@@ -310,13 +329,14 @@ h3{
   }
 
   .work-container{ margin-top: 0;}
+  #work-experience li{margin: 5px auto;}
   .jobs .company-name{ font-size: 40px;}
   .jobs .job-description{
     font-size: 16px;
     padding: 0 25px;
   }
 
-  .textContainer{
+  .text-container{
     margin-top: 0;
   }
 
@@ -327,16 +347,24 @@ h3{
     min-height: 50px;
   }
 
+  .navbar ul li{
+    width: 40%;
+  }
+
+  .navbar ul li a{
+    font-size: 40px;
+  }
+
   .nav-links{
     position: absolute;
     right: 0px;
     height: 100vh;
-    top: 5vh;
+    top: 0vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgba(0,0,0,0.7);
-    width: 40vw !important;
+    background: rgba(163, 161, 161);
+    width: 100vw !important;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
   }
