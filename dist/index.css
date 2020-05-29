@@ -184,6 +184,7 @@ h3{
   padding: 10px;
   color:black;
   width: 40%;
+  max-width: 700px;
 }
 
 .current-job{
@@ -196,7 +197,7 @@ h3{
 #work-experience li{
   max-width: 500px;
   list-style: none;
-  margin-bottom: 1em;
+  margin: auto auto 0;
 }
 
 .job-description{
