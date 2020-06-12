@@ -6,11 +6,14 @@
 
 body{
   font-family: 'Poppins', sans-serif;
-  background: #333;
+  background: #254E58;
   color: #fff;
   line-height: 1.6;
   height: 100vh;
   overflow: hidden;
+}
+h1{
+  font-family: 'Colfax';
 }
 
 .container{
@@ -21,17 +24,7 @@ body{
 }
 
 section{
- background-color:#254E58 !important;
-}
-/* Section Style*/
-section#home{
-  background-color: #254E58;
-}
-section#skills{
-  background-color: #254E58;
-}
-section#projects{
-  background-color: #BAB2B5;
+ background-color:#254E58;
 }
 
 section{
@@ -180,7 +173,6 @@ h3{
 
 .current-job, .past-job{
   text-align: center;
-  border-radius: 24px;
   padding: 10px;
   color:black;
   width: 40%;
@@ -197,23 +189,32 @@ h3{
 #work-experience li{
   max-width: 500px;
   list-style: none;
-  margin: auto auto 0;
+  margin: 10px auto;
 }
 
 .job-description{
   margin-top: 50px;
   text-align: left;
+  /* position: relative; */
 }
+/* 
+.job-description li::before{
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: rgb(100,255,218);
+} */
 
 
 /*Skills Section*/
 .skills-container{
   display: flex;
   padding-top: 3vh;
+  width: 100%;
 }
 
 .skill-section{
-  width: 33vw;
+  width: 100%;
   margin: 1.5%;
   background: #333;
   opacity: 0.75;
@@ -259,16 +260,23 @@ h3{
   text-align: center;
   align-items: center;
   padding-top: 10%;
+  padding-bottom: 30px;
 }
 
 .individual-project{
   margin: 0 5%;
   width: 100%;
   height: 80%;
+  max-height: 200px;
+}
+.individual-project button{
+  padding: 25px;
+}
+.individual-project p{
+  margin-top: 20px;
 }
 
 .project-list .individual-project button{
-  font-family: 'Poppins', sans-serif;
   font-weight: bold;
   letter-spacing: 1em;
   border-radius: 1%;
@@ -285,14 +293,47 @@ h3{
   #work-experience li{max-width: 350px;}
 }
 
+
+
 /*Phone Screen Size */
 @media screen and (max-width: 768px){
   section{
     height: auto;
+    min-height: 100%;
+    width: 86%;
+    margin: auto;
+    margin-bottom: 30px;
   }
 
   #home ul li{
     padding: 20px 10px;
+  }
+
+  #work-experience{
+    padding: 20px 10px; 
+  }
+  #work-experience li{
+    max-width: 500px;
+    margin: 10px auto;
+  }
+  .jobs{
+    flex-direction: column;
+  }
+  .current-job, .past-job{
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .jobs{
+    flex-direction: column;
+    padding: 0;
+  }
+  #work-experience{padding: 0;}
+  .work-container{ margin-top: 0;}
+  .jobs .company-name{ font-size: 40px;}
+  .jobs .job-description{
+    font-size: 16px;
+    padding: 0 25px;
   }
 
   .skills-container{
@@ -302,7 +343,10 @@ h3{
     padding: 20px 0;
   }
 
-  .skill-section{width: 90%;}
+  .skill-section{
+    width: 100%;
+    margin-bottom: 20px;
+  }
 
   .skills-container h2{font-size: 5vw;}
 
@@ -310,35 +354,29 @@ h3{
     height: auto;
   }
 
-  .skill-section ul li i{ font-size: 40px;}
-  #firebaseIcon{ width: 40px; height: 41px;}
 
+  .skill-section ul li i{ font-size: 60px;}
+
+  #projects .text-container{
+    height: auto;
+  }
   .project-list{
     flex-direction: column;
     height: 100%;
+    padding: 0;
   }
 
   .individual-project{
-      padding: 10%;
-      width: 100vw;
-      height: 25vh;
+      max-height: 100%;
+      margin-bottom: 30px;
   }
-
-  .jobs{
-    flex-direction: column;
-    padding: 0 10px;
+  .project-list .individual-project button{
+    padding: 40px 30px;
+    width: 75%;
   }
-
-  .work-container{ margin-top: 0;}
-  #work-experience li{margin: 5px auto;}
-  .jobs .company-name{ font-size: 40px;}
-  .jobs .job-description{
-    font-size: 16px;
-    padding: 0 25px;
-  }
-
   .text-container{
     margin-top: 0;
+    margin-bottom: 30px;
   }
 
 
@@ -408,4 +446,16 @@ h3{
   #nav-toggle.active span:after {
     transform: rotate(-45deg);
   }
+}
+
+@media only screen and (max-width: 530px){
+  .skill-section ul li i{ font-size: 50px;}
+}
+
+@media only screen and (max-width: 320px){
+  .jobs .company-name{
+    font-size: 35px;
+  }
+  .skill-section ul li i{ font-size: 35px;}
+  .project-list .individual-project button{width: 100%;}
 }
